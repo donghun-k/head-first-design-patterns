@@ -1,4 +1,4 @@
-package factory;
+package factory.method;
 
 public abstract class PizzaStore {
   abstract Pizza createPizza(String item);

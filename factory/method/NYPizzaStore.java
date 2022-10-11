@@ -1,4 +1,4 @@
-package factory;
+package factory.method;
 
 public class NYPizzaStore extends PizzaStore {
   public Pizza createPizza(String item) {

@@ -1,4 +1,4 @@
-package factory;
+package factory.method;
 
 public class ChicagoStyleVeggiePizza extends Pizza {
   public ChicagoStyleVeggiePizza() {
