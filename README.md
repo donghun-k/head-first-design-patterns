@@ -37,3 +37,6 @@
 
 ## Command pattern
 > 함수 호출을 캡슐화한 후 Invoker를 통해 간접적으로 명령을 실행시키는 패턴
+
+## Adapter pattern
+> 객체를 Wrapping하여 기능을 변경시키는 패턴
