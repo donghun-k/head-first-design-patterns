@@ -1,9 +1,10 @@
-package composite.menu;
+package composite;
 
 import java.util.Iterator;
 import java.util.ArrayList;
 
 public class Menu extends MenuComponent {
+  private Iterator<MenuComponent> iterator = null;
   private ArrayList<MenuComponent> menuComponents = new ArrayList<MenuComponent>();
   private String name;
   private String description;
@@ -31,6 +32,13 @@ public class Menu extends MenuComponent {
 
   public String getDescription() {
     return description;
+  }
+
+  public Iterator<MenuComponent> createIterator() {
+    if (iterator == null) {
+      iterator = new CompositeIterator(menuComponents.iterator());
+    }
+    return iterator;
   }
 
   public void print() {

@@ -1,4 +1,6 @@
-package composite.menu;
+package composite;
+
+import java.util.Iterator;
 
 public abstract class MenuComponent {
 
@@ -29,6 +31,8 @@ public abstract class MenuComponent {
   public boolean isVegetarian() {
     throw new UnsupportedOperationException();
   }
+
+  public abstract Iterator<MenuComponent> createIterator();
 
   public void print() {
     throw new UnsupportedOperationException();

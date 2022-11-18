@@ -1,4 +1,6 @@
-package composite.menu;
+package composite;
+
+import java.util.Iterator;
 
 public class MenuItem extends MenuComponent {
   private String name;
@@ -30,6 +32,10 @@ public class MenuItem extends MenuComponent {
 
   public boolean isVegetarian() {
     return vegetarian;
+  }
+
+  public Iterator<MenuComponent> createIterator() {
+    return new NullIterator();
   }
 
   public void print() {
