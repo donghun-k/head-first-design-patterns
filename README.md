@@ -71,4 +71,7 @@
 
 ## Composite pattern
 
-> 계층적으로 구성된 정보를 Tree 구조로 구현하는 
+> 계층적으로 구성된 정보를 Tree 구조로 구현하는 패턴
+
+## State pattern
+> 
