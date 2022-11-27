@@ -53,25 +53,41 @@
 
 > 한 줄의 함수 호출을 커맨드 객체로 캡슐화한 후 Invoker를 통해 간접적으로 명령을 실행시키는 패턴
 
+- 커맨드 객체는 Method reference, Receiver, Argument로 구성되어 있음 
+- 로그 및 트랜잭션 시스템을 구현할 수 있음
+
 ## Adapter pattern
 
 > 객체를 Wrapping하여 기능을 변경시키는 패턴
+
+- 어떤 Interface를 Client에서 요구하는 Interface에 맞게 변경하는 패턴
 
 ## Facade pattern
 
 > 특정 서브 시스템에 소속된 여러 개의 객체에 접근하기 위한 통합된 접근 경로를 제공하는 패턴
 
+- 모듈 간의 결합도를 낮추기 위한 최소 지식의 원칙(Principle of least knowledge)을 따르는 패턴
+
 ## Template method pattern
 
 > 객체가 실행해야 하는 알고리즘의 기본 골격을 상위 클래스에 구현하고 하위 클래스에서 override하여 행위의 다양성을 표현하는 패턴
+
+- Strategy pattern과 달리 Inheritance를 활용
+- 저수준 모듈이 고수준 모듈에 의존해야 한다는 의존성 역전 원칙(Dependency inversion principle)을 따르는 패턴
 
 ## Iterator pattern
 
 > Collection 객체의 요소들을 traverse하기 위한 기능을 Collection 객체와 독립적으로 구현하는 패턴
 
+- 모든 클래스는 하나의 역할을 맡아야 한다는 단일 책임 원칙(Single Responsibility Principle)에 따르는 패턴
+- Java의 Collection 객체들은 Iterable 인터페이스를 구현하고 있으며 Iterator pattern을 따르고 있음
+
 ## Composite pattern
 
 > 계층적으로 구성된 정보를 Tree 구조로 구현하는 패턴
+
+- Component 인터페이스를 통해 Leaf 객체와 Composite 객체를 같은 방법으로 다룰 수 있음
+- 단일 책임 원칙을 깨는 대신 어떤 객체가 Leaf 객체인지 Coposite 객체인지에 대한 투명성을 보장함
 
 ## State pattern
 
