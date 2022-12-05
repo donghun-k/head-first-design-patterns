@@ -92,3 +92,8 @@
 ## State pattern
 
 > 객체의 상태 변화를 Simulation하는 알고리즘을 객체 지향적으로 구현하는 패턴
+
+## Proxy pattern
+### Remote proxy
+### Virtual proxy
+### Protection proxy
